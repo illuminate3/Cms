@@ -16,10 +16,10 @@ class CreateResourcesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
-			$table->string('title');
-			$table->text('description');
-			$table->string('controller');
-			$table->string('path');
+			$table->string('title')->nullable();
+			$table->text('description')->nullable();
+			$table->string('controller')->nullable();
+			$table->string('path')->nullable();
 		});
 	}
 

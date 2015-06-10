@@ -18,12 +18,12 @@ class CreateContentTable extends Migration {
 			$table->timestamps();
 			$table->integer('layout_id')->nullable();
 			$table->integer('page_id')->nullable();
-			$table->integer('section_id');
-			$table->integer('block_id');
-			$table->string('controller');
-			$table->text('params');
-			$table->integer('position');
-			$table->smallInteger('global');
+			$table->integer('section_id')->nullable();
+			$table->integer('block_id')->nullable();
+			$table->string('controller')->nullable();
+			$table->text('params')->nullable();
+			$table->integer('position')->nullable();
+			$table->smallInteger('global')->nullable();
 
 			$table->index('layout_id');
 			$table->index('page_id');

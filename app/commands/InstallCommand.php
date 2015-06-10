@@ -36,7 +36,7 @@ class InstallCommand extends Command {
 		Config::set('database.connections.mysql.database', $this->argument('database'));
 
 		// Create a local config file with the new database
-		$this->writeLocalDatabaseConfigFile();
+//		$this->writeLocalDatabaseConfigFile();
 
 		if($this->checkIfWorkbench()) {
 			$this->call('asset:publish', array('--bench' => 'illuminate3/content'));

@@ -117,7 +117,7 @@ return array(
 		'Codesleeve\AssetPipeline\AssetPipelineServiceProvider',
 //        'Barryvdh\Debugbar\ServiceProvider',
 
-        
+
 		'Illuminate3\User\UserServiceProvider',
 		'Illuminate3\Admin\AdminServiceProvider',
 		'Illuminate3\Crud\CrudServiceProvider',

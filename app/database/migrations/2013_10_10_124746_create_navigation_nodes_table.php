@@ -16,22 +16,22 @@ class CreateNavigationNodesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
-			$table->string('title');
-			$table->text('description');
-			$table->integer('page_id');
-			$table->integer('container_id');
-			$table->string('link_class');
-			$table->string('icon_class');
-			$table->text('params');
-                                
+			$table->string('title')->nullable();
+			$table->text('description')->nullable();
+			$table->integer('page_id')->nullable();
+			$table->integer('container_id')->nullable();
+			$table->string('link_class')->nullable();
+			$table->string('icon_class')->nullable();
+			$table->text('params')->nullable();
+
 			$table->integer('parent_id')->nullable();
 			$table->integer('lft')->nullable();
 			$table->integer('rgt')->nullable();
 			$table->integer('depth')->nullable();
-                                
+
 			$table->index('page_id');
 			$table->index('container_id');
-                        
+
 			$table->index('parent_id');
 			$table->index('lft');
 			$table->index('rgt');

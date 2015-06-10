@@ -16,12 +16,12 @@ class CreatePagesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->timestamps();
-			$table->string('title');
-			$table->string('route');
-			$table->string('method');
-			$table->integer('layout_id');
-			$table->string('controller');
-			$table->string('alias');
+			$table->string('title')->nullable();
+			$table->string('route')->nullable();
+			$table->string('method')->nullable();
+			$table->integer('layout_id')->nullable();
+			$table->string('controller')->nullable();
+			$table->string('alias')->nullable();
 		});
 	}
 
